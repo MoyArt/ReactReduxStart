@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SearchBar from './components/search_bar';
-
+import YTSearch from 'youtube-api-search';
 const API_KEY = 'AIzaSyDGdCpzKCvEQqciOEkEjOhRj_hMxyhb9rw';
+YTSearch({key:API_KEY, term: '3D printers'}, function(data){
+    console.log(data)
+})
 /* Create a new component.*/
 
 const App = function(){
