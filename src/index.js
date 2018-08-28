@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import SearchBar from './components/search_bar';
+import VideoList from './components/video_list';
 import YTSearch from 'youtube-api-search';
+
+
 const API_KEY = 'AIzaSyDGdCpzKCvEQqciOEkEjOhRj_hMxyhb9rw';
 
 /* Create a new component.*/
@@ -17,7 +20,7 @@ class App extends Component{
     }
     render(){
         return (
-            <div class="search-bar">
+            <div className="search-bar">
                 <SearchBar/>
             </div>
         );
